@@ -3,7 +3,7 @@
 # A clean, responsive portfolio website built using only HTML5 and CSS3 — no JavaScript, no frameworks. Ideal for developers, designers, or freelancers who want a fast and lightweight personal site to showcase their work.
 
 ## Live Demo
-
+<a href="https://debo173.github.io/CODSOFT-task3-personal-portfolio/">https://debo173.github.io/CODSOFT-task3-personal-portfolio/</a>
 
 ## Tech Stack
 <ul>
