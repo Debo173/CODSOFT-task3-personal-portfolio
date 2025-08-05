@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(31, 44, 44);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.nav {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 10vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: rgb(238, 121, 32);
+}
+
+.righttag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.5vw;
+}
+
+.righttag h3 {
+    font-size: 1vw;
+}
+
+.righttag a {
+    color: white;
+    text-decoration: none;
+}
+
+.righttag a:hover {
+    color: rgb(238, 121, 32)
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(47, 154, 193, 0.3), rgba(238, 9, 121, 0));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin-top: 30vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: #ffb700;
+}
+
+.box :hover {
+    transform: scale(1.05);
+}
+
+.text-grad {
+    background: linear-gradient(90deg, #ffb700, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box h1 {
+    font-size: 4vw;
+    color: white;
+}
+
+.box p {
+    color: rgb(210, 203, 203);
+    font-size: 1vw;
+    margin-left: 4vw;
+}
+
+.box button {
+    height: 5vh;
+    width: 10vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.text-about h2 {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+}
+
+hr {
+    margin: 10px auto;
+    width: 5%;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #7c7b79, #ee0979);
+    -webkit-text-fill-color: transparent;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.content {
+    margin-top: -10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    background: linear-gradient(to left, rgba(47, 154, 193, 0.3), rgba(238, 9, 121, 0));
+    transition: box-shadow 0.3s ease;
+}
+
+.content:hover {
+    box-shadow: 0 4px 20px rgba(99, 132, 139, 0.8);
+}
+
+.content img {
+    width: 25%;
+    height: 50%;
+    border-radius: 55%;
+}
+
+.container-about {
+    width: 50%;
+}
+
+.container-about p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.skill-about h2 {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+}
+
+
+.skill {
+    width: 100%;
+    height: 60%;
+}
+
+.skill-name {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.skill-category {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+}
+
+.skill-category button {
+    height: 53px;
+    width: 200px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to left, rgba(47, 154, 193, 0.4), rgba(238, 9, 121, 0));
+    color: white;
+}
+
+.skill-category button:hover {
+    box-shadow: 0 4px 20px rgba(99, 132, 139, 0.8);
+}
+
+.skill-category {
+    background: linear-gradient(90deg, #585856, #60ede2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-about h2 {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-container {
+    width: 32%;
+    height: 50%;
+    color: white;
+    display: flex;
+    margin-top: 5%;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.project-container::-webkit-scrollbar {
+    display: none;
+}
+
+.project-container h3 {
+    font-size: 24px;
+}
+
+.project-container p {
+    text-align: left;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.project-1 {
+    box-shadow: 0 4px 20px rgba(74, 79, 80, 0.9);
+    border-radius: 15px;
+    border: 1px solid transparent;
+    width: 255px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    height: 42vh;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-1 a {
+    text-decoration: none;
+}
+
+.project-1:hover {
+    transform: scale(1.05);
+    cursor: grabbing;
+}
+
+.project-1 button {
+    width: 75px;
+    height: 25px;
+    margin-left: 30%;
+    margin-top: 12%;
+    font-size: 12px;
+    border-radius: 7px;
+    transform: scale(1.05);
+    border: 2px solid #ffb700;
+    background: linear-gradient(90deg, #7c7b79, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(198, 136, 38);
+    box-shadow: 0 4px 20px rgba(197, 197, 39, 0.8);
+}
+
+.contact-heading h2 {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    margin-top: -40px;
+}
+
+.contact {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutcontact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    margin-top: 50px;
+    width: 120%;
+    height: 60%;
+    color: white;
+    padding: 15px;
+    background: linear-gradient(to left, rgba(47, 154, 193, 0.3), rgba(238, 9, 121, 0));
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    box-shadow: 0 4px 20px rgba(99, 132, 139, 0.8);
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.contact-container p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contact-container ul li {
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: #aaa;
+    padding: 20px;
+}
+
+
+@media (max-width:480px) {
+    .righttag h3 {
+        visibility: hidden;
+    }
+
+    header {
+        height: 12vh;
+    }
+
+    .nav h1 {
+        text-align: center;
+        font-size: 55px;
+        margin-left: 30vw;
+    }
+
+    .hero {
+        height: 60%;
+    }
+
+    .box h1 {
+        font-size: 55px;
+        margin-left: 16vw;
+    }
+
+    .box p {
+        font-size: 25px;
+        margin-left: 8vw;
+    }
+
+    .box button {
+        height: 55px;
+        width: 90px;
+        margin-left: 35vw;
+        font-size: 14px;
+    }
+
+    .content {
+        margin-top: -55px;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content img {
+        height: 15%;
+    }
+
+    .container-about {
+        width: 70%;
+    }
+
+    .container-about p {
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .text-about h2 {
+        font-size: 58px;
+        margin-top: 115px;
+    }
+
+    .skill-about h2 {
+        font-size: 58px;
+    }
+
+    .project-container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35%;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .project-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-1 {
+        width: 425px;
+        height: 300px;
+    }
+
+    .project-1 h3 {
+        font-size: 27px;
+    }
+
+    .project-1 p {
+        font-size: 20px;
+    }
+
+    .project-1 button {
+        height: 3vh;
+        width: 25vw;
+        margin-top: 10%;
+    }
+
+    .project-about h2 {
+        font-size: 58px;
+    }
+
+    .project {
+        height: 70%;
+    }
+
+    .contact-heading h2 {
+        font-size: 58px;
+    }
+
+    .contact-container h2 {
+        font-size: 30px;
+        padding: 50px;
+    }
+
+    .contact-container p {
+        font-size: 28px;
+    }
+
+    .contact-container ul li {
+        font-size: 28px;
+    }
+
+    footer {
+        font-size: 28px;
+    }
+}
